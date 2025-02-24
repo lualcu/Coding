@@ -10,6 +10,8 @@ public class Multiplicacion {
 			z[i] = A[i]*B[i]; 
 		}
 		//Colocar los Datos de los Arreglos en la variable String
+		datos += "A[]\t\tB[]\t\tZ[]";
+		datos += "\n------------------------------------------------------\n";
 		for(int i = 0; i<z.length;i++) {
 			datos += A[i] + "\t*\t" + B[i] + "\t=\t" + z[i] + "\n";
 		}

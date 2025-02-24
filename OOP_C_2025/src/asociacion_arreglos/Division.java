@@ -10,8 +10,10 @@ public class Division {
 			z[i] = (double)A[i]/(double)B[i]; 
 		}
 		//Colocar los Datos de los Arreglos en la variable String
+		datos += "A[]\t\tB[]\t\tZ[]";
+		datos += "\n------------------------------------------------------\n";
 		for(int i = 0; i<z.length;i++) {
-			datos += A[i] + "\t/\t" + B[i] + "\t=\t" + z[i] + "\n";
+			datos += A[i] + "\t/\t" + B[i] + "\t=\t" + String.format("%.2f", z[i]) + "\n";
 		}
 		return datos;
 	}
