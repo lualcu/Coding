@@ -20,6 +20,7 @@ public class Menu {
 	Division d = new Division();
 	Residuo re = new Residuo();
 	Intercalacion i = new Intercalacion();
+	Ecuacion e = new Ecuacion();
 	
 	public void menu() {
 	do {
@@ -94,6 +95,11 @@ public class Menu {
 				
 				break;
 			case 8:
+				salida.setTabSize(7);
+				data = e.ecuacion(A, B);
+				salida.setText(data);
+				JOptionPane.showMessageDialog(null, salida, 
+						"Resultado - Ecuacion", JOptionPane.INFORMATION_MESSAGE);
 				break;
 			case 9:
 				JOptionPane.showMessageDialog(null, "Hasta la Vista Baby!!!",
