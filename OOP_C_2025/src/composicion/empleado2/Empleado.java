@@ -38,7 +38,9 @@ public class Empleado {
 		this.origen = origen;
 		
 	}
+	
 	// Metodos get's
+	
 	public String getNombre() {
 		return this.nombre;
 	}
