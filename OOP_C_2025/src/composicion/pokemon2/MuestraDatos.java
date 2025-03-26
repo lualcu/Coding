@@ -15,10 +15,12 @@ public class MuestraDatos {
 	public void muestraDatos (Pokemon p) {
 		datos += "-----------------------------------------------------------------\n";
 		// Concatenar la informacion del objeto P
-		datos += p.getNombre() + "\t" + p.getEspecie() + "\t" + p.getTipo() + "\t" + p.getHabitat() + "\t" + p.getPeso() + "\t" + p.getAltura() + "\n";
+		datos += p.getNombre() + "\t" + p.getEspecie() + "\t" + p.getTipo() + "\t" 
+		+ p.getHabitat() + "\t" + p.getPeso() + "\t" + p.getAltura() + "\n";
 		// Colocar la Variable Datos en un JTextArea
 		salida.setText(datos);
-		JOptionPane.showMessageDialog(null, salida, "Reporte de Pokemon´s", JOptionPane.INFORMATION_MESSAGE, aviso);
+		JOptionPane.showMessageDialog(null, salida, "Reporte de Pokemon´s", 
+				JOptionPane.INFORMATION_MESSAGE, aviso);
 	}
 	
 }

@@ -12,7 +12,12 @@ public class Pokemon {
 	
 	// Definicion del Metodo Constructor
 	
-	public Pokemon(String nombre, String especie, String tipo, double peso, double altura, String habitat) {
+	public Pokemon(String nombre, 
+				   String especie, 
+				   String tipo, 
+				   double peso, 
+				   double altura, 
+				   String habitat) {
 		this.nombre = nombre;
 		this.especie = especie;
 		this.tipo = tipo;

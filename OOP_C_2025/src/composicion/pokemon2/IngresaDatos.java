@@ -14,12 +14,18 @@ public class IngresaDatos {
 		String nombre, especie, tipo, habitat;
 		double peso, altura;
 		// Solicitar Valores 
-		nombre = (String) JOptionPane.showInputDialog(null, "Ingresa Nombre: ", "Nombre - Pokemon", JOptionPane.QUESTION_MESSAGE, aviso, null, null);
-		especie = (String) JOptionPane.showInputDialog(null, "Ingresa Especie: ", "Especie - Pokemon", JOptionPane.QUESTION_MESSAGE, aviso, null, null);
-		tipo = (String) JOptionPane.showInputDialog(null, "Ingresa Tipo: ", "Tipo - Pokemon", JOptionPane.QUESTION_MESSAGE, aviso, null, null);
-		habitat = (String) JOptionPane.showInputDialog(null, "Ingresa Habitat: ", "Habitat - Pokemon", JOptionPane.QUESTION_MESSAGE, aviso, null, null);
-		peso = Double.parseDouble((String) JOptionPane.showInputDialog(null, "Ingresa Peso: ", "Peso - Pokemon", JOptionPane.QUESTION_MESSAGE, aviso, null, null));
-		altura = Double.parseDouble((String) JOptionPane.showInputDialog(null, "Ingresa Altura: ", "Altura - Pokemon", JOptionPane.QUESTION_MESSAGE, aviso, null, null));
+		nombre = (String) JOptionPane.showInputDialog(null, "Ingresa Nombre: ", "Nombre - Pokemon",
+				JOptionPane.QUESTION_MESSAGE, aviso, null, null);
+		especie = (String) JOptionPane.showInputDialog(null, "Ingresa Especie: ", "Especie - Pokemon", 
+				JOptionPane.QUESTION_MESSAGE, aviso, null, null);
+		tipo = (String) JOptionPane.showInputDialog(null, "Ingresa Tipo: ", "Tipo - Pokemon", 
+				JOptionPane.QUESTION_MESSAGE, aviso, null, null);
+		habitat = (String) JOptionPane.showInputDialog(null, "Ingresa Habitat: ", "Habitat - Pokemon",
+				JOptionPane.QUESTION_MESSAGE, aviso, null, null);
+		peso = Double.parseDouble((String) JOptionPane.showInputDialog(null, "Ingresa Peso: ",
+				"Peso - Pokemon", JOptionPane.QUESTION_MESSAGE, aviso, null, null));
+		altura = Double.parseDouble((String) JOptionPane.showInputDialog(null, "Ingresa Altura: ", 
+				"Altura - Pokemon", JOptionPane.QUESTION_MESSAGE, aviso, null, null));
 		
 		//Crear un Objeto de la Clase Pokemon
 		

@@ -1,4 +1,4 @@
-package composicion_vehiculo2;
+package composicion.vehiculo2;
 
 public class Vehiculo {
 	// Definicion de los Atributos de la Clase

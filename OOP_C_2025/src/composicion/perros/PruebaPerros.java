@@ -1,4 +1,4 @@
-package composicion_perros;
+package composicion.perros;
 
 public class PruebaPerros {
 

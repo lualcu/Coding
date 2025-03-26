@@ -1,4 +1,4 @@
-package composicion_vehiculo;
+package composicion.vehiculo;
 
 import javax.swing.JTextArea;
 

@@ -1,4 +1,4 @@
-package composicion_vehiculo2;
+package composicion.vehiculo2;
 
 import java.awt.Image;
 

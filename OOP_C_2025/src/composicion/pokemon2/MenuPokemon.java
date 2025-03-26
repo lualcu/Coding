@@ -19,20 +19,27 @@ public class MenuPokemon {
 	public void menu() {
 		int opc;
 		do {
-			opc = Integer.parseInt((String) JOptionPane.showInputDialog(null, "1.- Crear Pokemon\n"
-					+ "2.- Salir\n", "Menu Pokemon", JOptionPane.INFORMATION_MESSAGE, menu, null, null));
+			opc = Integer.parseInt((String) JOptionPane.showInputDialog(null, 
+					  "1.- Crear Pokemon\n"
+					+ "2.- Salir\n", 
+					  "Menu Pokemon", 
+					  JOptionPane.INFORMATION_MESSAGE, menu, null, null));
 			switch(opc) {
 				case 1:
 					ing.ingresaDatos();
 					break;
 				case 2:
-					JOptionPane.showMessageDialog(null, "Hasta la Vista Baby!!!", "Salir",
+					JOptionPane.showMessageDialog(null, 
+							"Hasta la Vista Baby!!!", "Salir",
 							JOptionPane.INFORMATION_MESSAGE, salir);
 					System.exit(0);
 				default:
-					JOptionPane.showMessageDialog(null, "Entrada Invalida", "ERROR", JOptionPane.ERROR_MESSAGE, error);
+					JOptionPane.showMessageDialog(null, 
+							"Entrada Invalida", "ERROR", 
+							JOptionPane.ERROR_MESSAGE, error);
 			}
 		}while(opc != 2);
 		
 	}
 }
+	
