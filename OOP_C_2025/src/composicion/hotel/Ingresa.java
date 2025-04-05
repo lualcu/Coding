@@ -1,10 +1,16 @@
 package composicion.hotel;
 
+import java.awt.Image;
+
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 public class Ingresa {
 	
 	Imprime i = new Imprime();
+	
+	Image imgPreg = new ImageIcon("src/general.icons/PREGUNTA.png").getImage();
+	ImageIcon preg= new ImageIcon(imgPreg.getScaledInstance(70, 70, Image.SCALE_SMOOTH));
 	
 	public Huesped ingresaHuesped() {
 		
@@ -12,14 +18,21 @@ public class Ingresa {
 		int edad;
 		long telefono;
 		
-		nombre = JOptionPane.showInputDialog(null, "Ingresa Nombre: ", "Nombre - Huesped", JOptionPane.INFORMATION_MESSAGE);
-		apellido = JOptionPane.showInputDialog(null, "Ingresa Apellido: ", "Apellido - Huesped", JOptionPane.INFORMATION_MESSAGE);
-		direccion = JOptionPane.showInputDialog(null, "Ingresa Direccion: ", "Direccion - Huesped", JOptionPane.INFORMATION_MESSAGE);
-		email = JOptionPane.showInputDialog(null, "Ingresa Email: ", "Email - Huesped", JOptionPane.INFORMATION_MESSAGE);
-		origen = JOptionPane.showInputDialog(null, "Ingresa Origen: ", "Origen - Huesped", JOptionPane.INFORMATION_MESSAGE);
+		nombre = (String)JOptionPane.showInputDialog(null, "Ingresa Nombre: ", 
+				"Nombre - Huesped", JOptionPane.INFORMATION_MESSAGE, preg, null, null);
+		apellido = (String)JOptionPane.showInputDialog(null, "Ingresa Apellido: ", 
+				"Apellido - Huesped", JOptionPane.INFORMATION_MESSAGE, preg, null, null);
+		direccion =(String)JOptionPane.showInputDialog(null, "Ingresa Direccion: ", 
+				"Direccion - Huesped", JOptionPane.INFORMATION_MESSAGE, preg, null, null);
+		email = (String)JOptionPane.showInputDialog(null, "Ingresa Email: ", 
+				"Email - Huesped", JOptionPane.INFORMATION_MESSAGE, preg, null, null);
+		origen = (String)JOptionPane.showInputDialog(null, "Ingresa Origen: ", 
+				"Origen - Huesped", JOptionPane.INFORMATION_MESSAGE, preg, null, null);
 		
-		edad = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa Edad: ", "Edad - Huesped", JOptionPane.INFORMATION_MESSAGE));
-		telefono = Long.parseLong(JOptionPane.showInputDialog(null, "Ingresa Telefono: ", "Telefono - Huesped", JOptionPane.INFORMATION_MESSAGE));
+		edad = Integer.parseInt((String)JOptionPane.showInputDialog(null, "Ingresa Edad: ", 
+				"Edad - Huesped", JOptionPane.INFORMATION_MESSAGE, preg, null, null));
+		telefono = Long.parseLong((String)JOptionPane.showInputDialog(null, "Ingresa Telefono: ",
+				"Telefono - Huesped", JOptionPane.INFORMATION_MESSAGE, preg, null, null));
 		
 		Huesped hue = new Huesped(nombre,apellido,direccion,email,origen,edad,telefono);
 		
@@ -32,11 +45,15 @@ public class Ingresa {
 		int numero,capacidad;
 		String piso, categoria;
 		
-		numero = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa Numero: ", "Numero - Habitacion", JOptionPane.INFORMATION_MESSAGE));
-		capacidad = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa Capacidad: ", "Capacidad - Habitacion", JOptionPane.INFORMATION_MESSAGE));
+		numero = Integer.parseInt((String)JOptionPane.showInputDialog(null, "Ingresa Numero: ",
+				"Numero - Habitacion", JOptionPane.INFORMATION_MESSAGE, preg, null, null));
+		capacidad = Integer.parseInt((String)JOptionPane.showInputDialog(null, "Ingresa Capacidad: ",
+				"Capacidad - Habitacion", JOptionPane.INFORMATION_MESSAGE, preg, null, null));
 		
-		piso = JOptionPane.showInputDialog(null, "Ingresa Piso: ", "Piso - Habitacion", JOptionPane.INFORMATION_MESSAGE);
-		categoria = JOptionPane.showInputDialog(null, "Ingresa Categoria: ", "Categoria - Habitacion", JOptionPane.INFORMATION_MESSAGE);
+		piso = (String) JOptionPane.showInputDialog(null, "Ingresa Piso: ", 
+				"Piso - Habitacion", JOptionPane.INFORMATION_MESSAGE, preg, null, null);
+		categoria = (String) JOptionPane.showInputDialog(null, "Ingresa Categoria: ",
+				"Categoria - Habitacion", JOptionPane.INFORMATION_MESSAGE, preg, null, null);
 		
 		Habitacion hab = new Habitacion(numero,capacidad,piso,categoria);
 		
@@ -48,15 +65,30 @@ public class Ingresa {
 	public void ingresaHotel(Huesped huesped, Habitacion habitacion) {
 		String nombre,direccion,telefono,www,rfc,categoria,ciudad;
 		
-		nombre = JOptionPane.showInputDialog(null, "Ingresa Nombre: ", "Nombre - Hotel", JOptionPane.INFORMATION_MESSAGE);
-		direccion = JOptionPane.showInputDialog(null, "Ingresa Direccion: ", "Direccion - Hotel", JOptionPane.INFORMATION_MESSAGE);
-		telefono = JOptionPane.showInputDialog(null, "Ingresa Telefono: ", "Telefono - Hotel", JOptionPane.INFORMATION_MESSAGE);
-		www = JOptionPane.showInputDialog(null, "Ingresa Web: ", "Web - Hotel", JOptionPane.INFORMATION_MESSAGE);
-		rfc = JOptionPane.showInputDialog(null, "Ingresa RFC: ", "RFC - Hotel", JOptionPane.INFORMATION_MESSAGE);
-		categoria = JOptionPane.showInputDialog(null, "Ingresa Categoria: ", "Categoria - Hotel", JOptionPane.INFORMATION_MESSAGE);
-		ciudad = JOptionPane.showInputDialog(null, "Ingresa Ciudad: ", "Ciudad - Hotel", JOptionPane.INFORMATION_MESSAGE);
+		nombre = (String)JOptionPane.showInputDialog(null, "Ingresa Nombre: ", 
+				"Nombre - Hotel", JOptionPane.INFORMATION_MESSAGE, preg, null, null);
+		direccion = (String)JOptionPane.showInputDialog(null, "Ingresa Direccion: ",
+				"Direccion - Hotel", JOptionPane.INFORMATION_MESSAGE, preg, null, null);
+		telefono = (String)JOptionPane.showInputDialog(null, "Ingresa Telefono: ", 
+				"Telefono - Hotel", JOptionPane.INFORMATION_MESSAGE, preg, null, null);
+		www = (String)JOptionPane.showInputDialog(null, "Ingresa Web: ", 
+				"Web - Hotel", JOptionPane.INFORMATION_MESSAGE, preg, null, null);
+		rfc = (String)JOptionPane.showInputDialog(null, "Ingresa RFC: ",
+				"RFC - Hotel", JOptionPane.INFORMATION_MESSAGE, preg, null, null);
+		categoria = (String)JOptionPane.showInputDialog(null, "Ingresa Categoria: ", 
+				"Categoria - Hotel", JOptionPane.INFORMATION_MESSAGE, preg, null, null);
+		ciudad = (String)JOptionPane.showInputDialog(null, "Ingresa Ciudad: ",
+				"Ciudad - Hotel", JOptionPane.INFORMATION_MESSAGE, preg, null, null);
 		
-		Hotel hotel = new Hotel(huesped,habitacion,nombre,direccion,telefono,www,rfc,categoria,ciudad);
+		Hotel hotel = new Hotel(huesped,
+								habitacion,
+								nombre,
+								direccion,
+								telefono,
+								www,
+								rfc,
+								categoria,
+								ciudad);
 		
 		i.datosHotel(hotel);
 

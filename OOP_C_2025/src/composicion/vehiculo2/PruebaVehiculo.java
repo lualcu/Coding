@@ -17,7 +17,8 @@ public class PruebaVehiculo {
 		JTextArea salida = new JTextArea();
 		String datos = "";
 		
-		Vehiculo a1 = new Vehiculo("Chevrolet", "ZDF-123-A", "Camaro", "Rojo", 250000, 8, "Sport", 5.5);
+		Vehiculo a1 = new Vehiculo("Chevrolet", "ZDF-123-A", "Camaro",
+				"Rojo", 250000, 8, "Sport", 5.5);
 		
 		datos+="Marca\tModelo\tTipo\tColor\tPlaca\tMotor\tCilindros\tPrecio\n";
 		datos+="------------------------------------------------"
@@ -26,7 +27,8 @@ public class PruebaVehiculo {
 		+ "\t" + a1.getColor() + "\t" + a1.getMatricula() + "\t" + a1.getTipoMotor() 
 		+ "\t" + a1.getCilindros() + "\t" + a1.getPrecio() + "\n";
 		salida.setText(datos);
-		JOptionPane.showMessageDialog(null, salida, "Catalogo - Vehiculos", JOptionPane.INFORMATION_MESSAGE,icon);
+		JOptionPane.showMessageDialog(null, salida, "Catalogo - Vehiculos",
+				JOptionPane.INFORMATION_MESSAGE,icon);
 		
 		// Modificar Mediante el Uso de los Set's algunos atributos de la clase
 		a1.setMatricula("AGS-456-G");
@@ -38,11 +40,13 @@ public class PruebaVehiculo {
 		+ "\t" + a1.getColor() + "\t" + a1.getMatricula() + "\t" + a1.getTipoMotor() 
 		+ "\t" + a1.getCilindros() + "\t" + a1.getPrecio() + "\n";
 		salida.setText(datos);
-		JOptionPane.showMessageDialog(null, salida, "Catalogo - Vehiculos", JOptionPane.INFORMATION_MESSAGE, icon);
+		JOptionPane.showMessageDialog(null, salida, "Catalogo - Vehiculos", 
+				JOptionPane.INFORMATION_MESSAGE, icon);
 		
 		// Ejecutar los Métodos de Operaciones
 		
-		JOptionPane.showMessageDialog(null, a1.acelerar(), "Acelerar", JOptionPane.INFORMATION_MESSAGE, icon);
+		JOptionPane.showMessageDialog(null, a1.acelerar(), "Acelerar", 
+				JOptionPane.INFORMATION_MESSAGE, icon);
 	}
 	
 

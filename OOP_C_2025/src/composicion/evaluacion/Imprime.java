@@ -27,7 +27,8 @@ public class Imprime {
 	public void imprimeCiclista(Ciclista ciclista) {
 		String datos = datosCiclista;
 		
-		datos += "------------------------------------------------------------------------------------------------------------------------------------------\n";
+		datos += "---------------------------------------------------------------------"
+			+ "---------------------------------------------------------------------\n";
 		
 		datos += ciclista.getNombre() + "\t" + 
 				 ciclista.getApellido() + "\t" + 
@@ -40,13 +41,15 @@ public class Imprime {
 		salida.setTabSize(12);
 		salida.setText(datos);
 		
-		JOptionPane.showMessageDialog(null, salida, "Reporte - Ciclista", JOptionPane.INFORMATION_MESSAGE, cic);
+		JOptionPane.showMessageDialog(null, salida, "Reporte - Ciclista", 
+				JOptionPane.INFORMATION_MESSAGE, cic);
 	}
 	
 	public void imprimeEntrenador(Entrenador entrenador) {
 		String datos = datosEntrenador;
 		
-		datos += "------------------------------------------------------------------------------------------------------------------------------------------------------------\n";
+		datos += "---------------------------------------------------------------------"
+		+ "---------------------------------------------------------------------------------------\n";
 		
 		datos += entrenador.getNombre() + "\t" + 
 				 entrenador.getApellido() + "\t" + 
@@ -60,13 +63,15 @@ public class Imprime {
 		
 		salida.setText(datos);
 		
-		JOptionPane.showMessageDialog(null, salida, "Reporte - Entrenador", JOptionPane.INFORMATION_MESSAGE, ent);
+		JOptionPane.showMessageDialog(null, salida, "Reporte - Entrenador",
+				JOptionPane.INFORMATION_MESSAGE, ent);
 	}
 	
 	public void imprimeTerapeuta(Terapeuta terapeuta) {
 		String datos = datosTerapeuta;
 		
-		datos += "------------------------------------------------------------------------------------\n";
+		datos += "------------------------------------------------------------------"
+				+ "------------------\n";
 		
 		datos += terapeuta.getNombre() + "\t" + 
 				 terapeuta.getEdad() + "\t" + 
@@ -76,12 +81,14 @@ public class Imprime {
 		
 		salida.setText(datos);
 		
-		JOptionPane.showMessageDialog(null, salida, "Reporte - Terapeuta", JOptionPane.INFORMATION_MESSAGE, ter);
+		JOptionPane.showMessageDialog(null, salida, "Reporte - Terapeuta", 
+				JOptionPane.INFORMATION_MESSAGE, ter);
 	}
 	
 	public void imprimePais(Pais pais) {
 		String datos = "\t\t\t|| Ciclista ||\n" + datosCiclista;
-		String linea = "------------------------------------------------------------------------------------------------------------------------------------------------------------\n";
+		String linea = "-----------------------------------------------------------------------"
+		+ "-------------------------------------------------------------------------------------\n";
 		
 		datos += linea;
 		
@@ -136,7 +143,8 @@ public class Imprime {
 		
 		salida.setText(datos);
 		
-		JOptionPane.showMessageDialog(null, salida, "Reporte - Pais", JOptionPane.INFORMATION_MESSAGE, pai);
+		JOptionPane.showMessageDialog(null, salida, "Reporte - Pais",
+				JOptionPane.INFORMATION_MESSAGE, pai);
 		
 	}
 	

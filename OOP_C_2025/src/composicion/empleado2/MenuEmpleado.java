@@ -25,10 +25,12 @@ public class MenuEmpleado {
 					i.ingresaDatos();
 					break;
 				case 2:
-					JOptionPane.showMessageDialog(null, "Hasta la Vista Baby!!!", "Salir", JOptionPane.INFORMATION_MESSAGE, salir);
+					JOptionPane.showMessageDialog(null, "Hasta la Vista Baby!!!",
+							"Salir", JOptionPane.INFORMATION_MESSAGE, salir);
 					System.exit(0);
 				default:
-					JOptionPane.showMessageDialog(null, "Entrada Invalida", "ERROR", JOptionPane.INFORMATION_MESSAGE,error);
+					JOptionPane.showMessageDialog(null, "Entrada Invalida",
+							"ERROR", JOptionPane.INFORMATION_MESSAGE,error);
 			}
 		}while(opc != 2);
 	}

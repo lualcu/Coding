@@ -17,14 +17,16 @@ public class MuestraDatos {
 		datos += "--------------------------------------------------------------------"
 				+ "-------------------------------------------------------------------\n";
 		//Concatenar los elementos del objeto e
-		datos += e.getNombre() + "\t" + e.getApellido() + "\t" + e.getEdad() + "\t" + e.getSexo() + "\t" + e.getPeso()
-				+ "\t" + e.getEmpresa() + "\t" + e.getOcupacion() + "\t" + e.getOrigen() + "\t" + e.getSalario() + "\t" + e.getCorreo() + "\n";
+		datos += e.getNombre() + "\t" + e.getApellido() + "\t" + e.getEdad() + "\t" + e.getSexo() 
+		+ "\t" + e.getPeso() + "\t" + e.getEmpresa() + "\t" + e.getOcupacion() + "\t" + e.getOrigen() 
+		+ "\t" + e.getSalario() + "\t" + e.getCorreo() + "\n";
 		
 		//Colocar la variable datos en el JTextArea
 		salida.setText(datos);
 		
 		//Colocar Salida en JOptionPane
-		JOptionPane.showMessageDialog(null, salida, "Reporte - Empleados", JOptionPane.INFORMATION_MESSAGE, emp);
+		JOptionPane.showMessageDialog(null, salida, "Reporte - Empleados", 
+				JOptionPane.INFORMATION_MESSAGE, emp);
 		
 	}
 }

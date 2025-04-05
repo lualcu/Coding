@@ -1,5 +1,8 @@
 package composicion.hotel;
 
+import java.awt.Image;
+
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.JTextArea;
 
@@ -9,6 +12,15 @@ public class Imprime {
 	String datosHab = "Num. Cuarto\tCapacidad\tPiso\tCategoria\n";
 	String datosHue = "Nombre\tApellido\tDireccion\tEmail\tOrigen\tEdad\tTelefono\n";
 	String datosHot = "Nombre\tDireccion\tTelefono\tWWW\tRFC\tCategoría\tCiudad\n";
+	
+	Image imgHotel = new ImageIcon("src/general.icons/HOTEL.png").getImage();
+	ImageIcon hot =  new ImageIcon(imgHotel.getScaledInstance(70, 70, Image.SCALE_SMOOTH));
+	
+	Image imgHue = new ImageIcon("src/general.icons/HUESPED.png").getImage();
+	ImageIcon hue= new ImageIcon(imgHue.getScaledInstance(70, 70, Image.SCALE_SMOOTH));
+	
+	Image imgHab = new ImageIcon("src/general.icons/HABITACION.png").getImage();
+	ImageIcon hab= new ImageIcon(imgHab.getScaledInstance(70, 70, Image.SCALE_SMOOTH));
 	
 	
 	public void datosHabitacion(Habitacion habitacion) {
@@ -22,7 +34,8 @@ public class Imprime {
 		
 		salida.setText(datosHabitacion);
 		
-		JOptionPane.showMessageDialog(null, salida, "Reporte - Habitacion", JOptionPane.INFORMATION_MESSAGE);
+		JOptionPane.showMessageDialog(null, salida, "Reporte - Habitacion", 
+				JOptionPane.INFORMATION_MESSAGE, hab);
 		
 	}
 	
@@ -31,14 +44,16 @@ public class Imprime {
 		String datosHuesped = datosHue;
 		
 		datosHuesped += "-------------------------------------------------------------"
-				+ "-----------------------------------------------------------------\n";
+				+ "------------------------------------------\n";
 		
-		datosHuesped += huesped.getNombre() + "\t" + huesped.getApellido() + "\t" + huesped.getDireccion()
-		 + "\t" + huesped.getEmail() + "\t" + huesped.getOrigen() + "\t" + huesped.getEdad() + "\t" + huesped.getTelefono() + "\n";
+		datosHuesped += huesped.getNombre() + "\t" + huesped.getApellido() + "\t" 
+		+ huesped.getDireccion() + "\t" + huesped.getEmail() + "\t" + huesped.getOrigen() 
+		+ "\t" + huesped.getEdad() + "\t" + huesped.getTelefono() + "\n";
 		
 		salida.setText(datosHuesped);
 		
-		JOptionPane.showMessageDialog(null, salida, "Reporte - Huesped", JOptionPane.INFORMATION_MESSAGE);
+		JOptionPane.showMessageDialog(null, salida, "Reporte - Huesped", 
+				JOptionPane.INFORMATION_MESSAGE, hue);
 
 	}
 	
@@ -47,7 +62,7 @@ public class Imprime {
 		String datosHotel = datosHue;
 		
 		datosHotel += "-------------------------------------------------------------"
-				+ "-----------------------------------------------------------------\n";
+				+ "-------------------------------------------\n";
 		
 		datosHotel += hotel.getHuesped().getNombre() + "\t"
 					+ hotel.getHuesped().getApellido() + "\t"
@@ -58,12 +73,12 @@ public class Imprime {
 					+ hotel.getHuesped().getTelefono() + "\n";
 		
 		datosHotel += "-------------------------------------------------------------"
-				+ "-----------------------------------------------------------------\n";
+				+ "-------------------------------------------\n";
 		
 		datosHotel += datosHab;
 		
 		datosHotel += "-------------------------------------------------------------"
-				+ "-----------------------------------------------------------------\n";
+				+ "-------------------------------------------\n";
 		
 		datosHotel += hotel.getHabitacion().getNumero() + "\t"
 					+ hotel.getHabitacion().getCapacidad() + "\t"
@@ -71,12 +86,12 @@ public class Imprime {
 					+ hotel.getHabitacion().getCategoria() + "\n";
 				
 		datosHotel += "-------------------------------------------------------------"
-				+ "-----------------------------------------------------------------\n";
+				+ "-------------------------------------------\n";
 		
 		datosHotel += datosHot;
 		
 		datosHotel += "-------------------------------------------------------------"
-				+ "-----------------------------------------------------------------\n";
+				+ "-------------------------------------------\n";
 		
 		datosHotel += hotel.getNombre() + "\t"
 					+ hotel.getDireccion() + "\t"
@@ -88,7 +103,8 @@ public class Imprime {
 		
 		salida.setText(datosHotel);
 		
-		JOptionPane.showMessageDialog(null, salida, "Reporte - Hotel", JOptionPane.INFORMATION_MESSAGE);
+		JOptionPane.showMessageDialog(null, salida, "Reporte - Hotel", 
+				JOptionPane.INFORMATION_MESSAGE, hot);
 		
 	}
 

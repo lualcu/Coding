@@ -26,8 +26,9 @@ public class Menu {
 	public void menu() {
 		int opc;
 		do {
-			opc = Integer.parseInt((String)JOptionPane.showInputDialog(null, "1.- Ingresa\n" + "2.- Consulta\n"
-					+ "3.- Salir\n","Menu", JOptionPane.INFORMATION_MESSAGE, menu, null, null));
+			opc = Integer.parseInt((String)JOptionPane.showInputDialog(null, 
+					"1.- Ingresa\n" + "2.- Consulta\n3.- Salir\n","Menu",
+					JOptionPane.INFORMATION_MESSAGE, menu, null, null));
 			switch(opc) {
 				case 1:
 					menuIngresa();
@@ -36,10 +37,12 @@ public class Menu {
 					menuConsulta();
 					break;
 				case 3:
-					JOptionPane.showMessageDialog(null, "Hasta la Vista Baby!!!", "Salir", JOptionPane.INFORMATION_MESSAGE, salir);
+					JOptionPane.showMessageDialog(null, "Hasta la Vista Baby!!!", "Salir", 
+							JOptionPane.INFORMATION_MESSAGE, salir);
 					System.exit(0);
 				default:
-					JOptionPane.showMessageDialog(null, "Entrada Invalida", "ERROR", JOptionPane.INFORMATION_MESSAGE,error);
+					JOptionPane.showMessageDialog(null, "Entrada Invalida", "ERROR",
+							JOptionPane.INFORMATION_MESSAGE,error);
 			}
 		}while(opc != 3);
 	}
@@ -48,7 +51,8 @@ public class Menu {
 		int opc;
 		do {
 			opc = Integer.parseInt((String)JOptionPane.showInputDialog(null, "1.- Alta Ciclista\n"
-					+ "2.- Alta Entrenador\n3.- Alta Terapeuta\n4.- Alta Pais\n5.- Regresar", "Menu Ingresa", JOptionPane.INFORMATION_MESSAGE,menu,null,null));
+					+ "2.- Alta Entrenador\n3.- Alta Terapeuta\n4.- Alta Pais\n5.- Regresar", 
+					"Menu Ingresa", JOptionPane.INFORMATION_MESSAGE,menu,null,null));
 			switch(opc) {
 				case 1:
 					ciclista = in.ingresaCiclista();
@@ -65,7 +69,8 @@ public class Menu {
 				case 5:
 					menu();
 				default:
-					JOptionPane.showMessageDialog(null, "Entrada Invalida!!!", "Error", JOptionPane.INFORMATION_MESSAGE,error);
+					JOptionPane.showMessageDialog(null, "Entrada Invalida!!!", "Error", 
+							JOptionPane.INFORMATION_MESSAGE,error);
 			}
 		}while(opc != 5);
 	}
@@ -74,7 +79,9 @@ public class Menu {
 		int opc;
 		do {
 			opc = Integer.parseInt((String)JOptionPane.showInputDialog(null, "1.- Ve Ciclista\n"
-					+ "2.- Ve Entrenador\n3.- Ve Terapeuta\n4.- Ve Pais\n5.- Regresar", "Menu Consulta", JOptionPane.INFORMATION_MESSAGE,menu,null,null));
+					+ "2.- Ve Entrenador\n3.- Ve Terapeuta\n4.- Ve Pais\n5.- Regresar", 
+					"Menu Consulta",
+					JOptionPane.INFORMATION_MESSAGE,menu,null,null));
 			switch(opc) {
 				case 1:
 					i.imprimeCiclista(ciclista);
@@ -91,7 +98,8 @@ public class Menu {
 				case 5:
 					menu();
 				default:
-					JOptionPane.showMessageDialog(null, "Entrada Invalida!!!", "Error", JOptionPane.INFORMATION_MESSAGE,error);
+					JOptionPane.showMessageDialog(null, "Entrada Invalida!!!", "Error",
+							JOptionPane.INFORMATION_MESSAGE,error);
 			}
 		}while(opc != 5);
 	}
