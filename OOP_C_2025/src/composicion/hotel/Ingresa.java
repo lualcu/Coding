@@ -9,7 +9,7 @@ public class Ingresa {
 	
 	Imprime i = new Imprime();
 	
-	Image imgPreg = new ImageIcon("src/general.icons/PREGUNTA.png").getImage();
+	Image imgPreg = new ImageIcon(getClass().getResource("/general.icons/PREGUNTA.png")).getImage();
 	ImageIcon preg= new ImageIcon(imgPreg.getScaledInstance(70, 70, Image.SCALE_SMOOTH));
 	
 	public Huesped ingresaHuesped() {
@@ -80,15 +80,8 @@ public class Ingresa {
 		ciudad = (String)JOptionPane.showInputDialog(null, "Ingresa Ciudad: ",
 				"Ciudad - Hotel", JOptionPane.INFORMATION_MESSAGE, preg, null, null);
 		
-		Hotel hotel = new Hotel(huesped,
-								habitacion,
-								nombre,
-								direccion,
-								telefono,
-								www,
-								rfc,
-								categoria,
-								ciudad);
+		Hotel hotel = new Hotel(huesped,habitacion,nombre,direccion,telefono,www,
+				rfc,categoria,ciudad);
 		
 		i.datosHotel(hotel);
 

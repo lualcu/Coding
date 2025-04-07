@@ -13,13 +13,13 @@ public class Imprime {
 	String datosEmpresa = "Empresa\tDireccion\tRFC\tWWW";
 	String datosVehiculo = "Marca\tModelo\tMatricula\tColor";
 	
-	Image imgEmp = new ImageIcon("src/general.icons/EMPRESA.png").getImage();
+	Image imgEmp = new ImageIcon(getClass().getResource("/general.icons/EMPRESA.png")).getImage();
 	ImageIcon emp =  new ImageIcon(imgEmp.getScaledInstance(70, 70, Image.SCALE_SMOOTH));
 	
-	Image imgCho = new ImageIcon("src/general.icons/CHOFER.png").getImage();
+	Image imgCho = new ImageIcon(getClass().getResource("/general.icons/CHOFER.png")).getImage();
 	ImageIcon cho= new ImageIcon(imgCho.getScaledInstance(70, 70, Image.SCALE_SMOOTH));
 	
-	Image imgAuto = new ImageIcon("src/general.icons/CARRO.png").getImage();
+	Image imgAuto = new ImageIcon(getClass().getResource("/general.icons/CARRO.png")).getImage();
 	ImageIcon au= new ImageIcon(imgAuto.getScaledInstance(70, 70, Image.SCALE_SMOOTH));
 	
 	public void datosChofer(Chofer chofer) {

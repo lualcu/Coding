@@ -13,13 +13,13 @@ public class Imprime {
 	String datosHue = "Nombre\tApellido\tDireccion\tEmail\tOrigen\tEdad\tTelefono\n";
 	String datosHot = "Nombre\tDireccion\tTelefono\tWWW\tRFC\tCategoría\tCiudad\n";
 	
-	Image imgHotel = new ImageIcon("src/general.icons/HOTEL.png").getImage();
+	Image imgHotel = new ImageIcon(getClass().getResource("/general.icons/HOTEL.png")).getImage();
 	ImageIcon hot =  new ImageIcon(imgHotel.getScaledInstance(70, 70, Image.SCALE_SMOOTH));
 	
-	Image imgHue = new ImageIcon("src/general.icons/HUESPED.png").getImage();
+	Image imgHue = new ImageIcon(getClass().getResource("/general.icons/HUESPED.png")).getImage();
 	ImageIcon hue= new ImageIcon(imgHue.getScaledInstance(70, 70, Image.SCALE_SMOOTH));
 	
-	Image imgHab = new ImageIcon("src/general.icons/HABITACION.png").getImage();
+	Image imgHab = new ImageIcon(getClass().getResource("/general.icons/HABITACION.png")).getImage();
 	ImageIcon hab= new ImageIcon(imgHab.getScaledInstance(70, 70, Image.SCALE_SMOOTH));
 	
 	

@@ -9,7 +9,7 @@ public class IngresaDatos {
 	// Instanciar un Objeto de la Clase MuestraDatos
 	Imprime i = new Imprime();
 	
-	Image imgPreg = new ImageIcon("src/general.icons/PREGUNTA.png").getImage();
+	Image imgPreg = new ImageIcon(getClass().getResource("/general.icons/PREGUNTA.png")).getImage();
 	ImageIcon preg= new ImageIcon(imgPreg.getScaledInstance(70, 70, Image.SCALE_SMOOTH));
 	
 	public Chofer ingresaChofer() {

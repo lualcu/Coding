@@ -44,9 +44,10 @@ public class PruebaVehiculo {
 				JOptionPane.INFORMATION_MESSAGE, icon);
 		
 		// Ejecutar los Métodos de Operaciones
-		
-		JOptionPane.showMessageDialog(null, a1.acelerar(), "Acelerar", 
-				JOptionPane.INFORMATION_MESSAGE, icon);
+		a1.arrancar();
+		a1.detenerse();
+		a1.acelerar();
+		a1.frenar();
 	}
 	
 

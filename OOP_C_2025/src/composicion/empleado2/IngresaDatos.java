@@ -43,16 +43,8 @@ public class IngresaDatos {
 		
 		
 		//Instanciar un objeto de la clase Empleado
-		Empleado e = new Empleado(nombre, 
-								  apellido,
-								  correo,
-								  empresa,
-								  salario,
-								  ocupacion,
-								  edad,
-								  sexo,
-								  peso,
-								  origen);
+		Empleado e = new Empleado(nombre,apellido,correo,empresa,salario,ocupacion,
+				edad,sexo,peso,origen);
 		
 		//Llamar al Metodo muestraDatos
 		m.muestraDatos(e);

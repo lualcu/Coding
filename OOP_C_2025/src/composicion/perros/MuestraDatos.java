@@ -22,6 +22,12 @@ public class MuestraDatos {
 		JOptionPane.showMessageDialog(null, salida, "Reporte - Mascotas", 
 		JOptionPane.INFORMATION_MESSAGE,icon);
 		
+		p.comer();
+		p.dormir();
+		p.ladrar();
+		p.saltar();
+		p.correr();
+		
 	}
 
 }

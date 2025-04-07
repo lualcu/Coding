@@ -40,15 +40,8 @@ public class IngresaDatos {
 				"Dorsal - Jugador", JOptionPane.INFORMATION_MESSAGE, icon, null, null));
 		
 		
-		Jugador j = new Jugador(nombre, 
-								apellido, 
-								correo, 
-								equipo, 
-								salario, 
-								posicion, 
-								edad, 
-								nacionalidad, 
-								numeral);
+		Jugador j = new Jugador(nombre,apellido,correo,equipo,salario,posicion, 
+				edad,nacionalidad, numeral);
 		
 		m.muestraDatos(j);
 		

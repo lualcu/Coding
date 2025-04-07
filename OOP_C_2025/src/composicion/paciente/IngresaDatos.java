@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
 public class IngresaDatos {
 	MuestraDatos m = new MuestraDatos();
 	
-	Image imgPreg = new ImageIcon("src/general.icons/PREGUNTA.png").getImage();
+	Image imgPreg = new ImageIcon(getClass().getResource("/general.icons/PREGUNTA.png")).getImage();
 	ImageIcon preg= new ImageIcon(imgPreg.getScaledInstance(70, 70, Image.SCALE_SMOOTH));
 	
 	public Medico ingresaMedico() {

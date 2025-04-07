@@ -28,5 +28,11 @@ public class MuestraDatos {
 		JOptionPane.showMessageDialog(null, salida, "Reporte - Empleados", 
 				JOptionPane.INFORMATION_MESSAGE, emp);
 		
+		e.atender();
+		e.surtir();
+		e.preparar();
+		e.administrar();
+		e.cobrar();
 	}
+	
 }

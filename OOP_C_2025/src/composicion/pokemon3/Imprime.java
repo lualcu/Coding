@@ -13,13 +13,13 @@ public class Imprime {
 	String datosGimnasio = "Nombre\tLugar\tPropietario\tSuperficie\tCapacidad\n";
 	String datosPokemon = "Nombre\tTipo\tPoder\tPeso\tAltura\tHabitat\tEspecie\tEvolucion\n";
 	
-	Image imgPok = new ImageIcon("src/general.icons/POKEMON.png").getImage();
+	Image imgPok = new ImageIcon(getClass().getResource("/general.icons/POKEMON.png")).getImage();
 	ImageIcon pok =  new ImageIcon(imgPok.getScaledInstance(70, 70, Image.SCALE_SMOOTH));
 	
-	Image imgEnt = new ImageIcon("src/general.icons/ENTRENADOR.png").getImage();
+	Image imgEnt = new ImageIcon(getClass().getResource("/general.icons/ENTRENADOR.png")).getImage();
 	ImageIcon ent= new ImageIcon(imgEnt.getScaledInstance(70, 70, Image.SCALE_SMOOTH));
 	
-	Image imgGym = new ImageIcon("src/general.icons/GIMNASIO.png").getImage();
+	Image imgGym = new ImageIcon(getClass().getResource("/general.icons/GIMNASIO.png")).getImage();
 	ImageIcon gym= new ImageIcon(imgGym.getScaledInstance(70, 70, Image.SCALE_SMOOTH));
 	
 	public void datosEntrenador(Entrenador entrenador) {

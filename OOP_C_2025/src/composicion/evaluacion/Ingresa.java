@@ -10,7 +10,7 @@ public class Ingresa {
 	Imprime i = new Imprime();
 	
 	// Crear iconos
-	Image imgPreg = new ImageIcon("src/general.icons/PREGUNTA.png").getImage();
+	Image imgPreg = new ImageIcon(getClass().getResource("/general.icons/PREGUNTA.png")).getImage();
 	ImageIcon preg= new ImageIcon(imgPreg.getScaledInstance(70, 70, Image.SCALE_SMOOTH));
 	
 	public Ciclista ingresaCiclista() {
@@ -88,7 +88,7 @@ public class Ingresa {
 		nombre = (String)JOptionPane.showInputDialog(null, "Ingresa Nombre: ", 
 				"Terapeuta", JOptionPane.INFORMATION_MESSAGE, preg, null,null);
 		email = (String)JOptionPane.showInputDialog(null, "Ingresa Email: ", 
-				"Terapeuta", JOptionPane.INFORMATION_MESSAGE);
+				"Terapeuta", JOptionPane.INFORMATION_MESSAGE, preg, null,null);
 		direccion = (String)JOptionPane.showInputDialog(null, "Ingresa Direccion: ",
 				"Terapeuta", JOptionPane.INFORMATION_MESSAGE, preg, null,null);
 		

@@ -15,13 +15,13 @@ public class Imprime {
 	String datosAu = "Marca\tModelo\tRendimiento\tCapacidad\t"
 			+ "Num. Puertas\tCombustible\tBolsas Seguridad\n";
 	
-	Image imgMotor = new ImageIcon("src/general.icons/MOTOR.png").getImage();
+	Image imgMotor = new ImageIcon(getClass().getResource("/general.icons/MOTOR.png")).getImage();
 	ImageIcon mot =  new ImageIcon(imgMotor.getScaledInstance(70, 70, Image.SCALE_SMOOTH));
 	
-	Image imgSte = new ImageIcon("src/general.icons/STEREO.png").getImage();
+	Image imgSte = new ImageIcon(getClass().getResource("/general.icons/STEREO.png")).getImage();
 	ImageIcon ste= new ImageIcon(imgSte.getScaledInstance(70, 70, Image.SCALE_SMOOTH));
 	
-	Image imgAuto = new ImageIcon("src/general.icons/CARRO.png").getImage();
+	Image imgAuto = new ImageIcon(getClass().getResource("/general.icons/CARRO.png")).getImage();
 	ImageIcon au= new ImageIcon(imgAuto.getScaledInstance(70, 70, Image.SCALE_SMOOTH));
 	
 	

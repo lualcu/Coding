@@ -33,6 +33,12 @@ public class MuestraDatos {
 		JOptionPane.showMessageDialog(null, salida, "Catalogo - Jugadores", 
 				JOptionPane.INFORMATION_MESSAGE, icon2);
 		
+		j.correr();
+		j.saltar();
+		j.pegar();
+		j.anotar();
+		j.festejar();
+		
 	}
 	
 

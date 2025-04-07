@@ -10,13 +10,13 @@ public class Imprime {
 	
 	JTextArea salida = new JTextArea();
 	
-	Image imgCic = new ImageIcon("src/general.icons/CICLISTA.png").getImage();
+	Image imgCic = new ImageIcon(getClass().getResource("/general.icons/CICLISTA.png")).getImage();
 	ImageIcon cic= new ImageIcon(imgCic.getScaledInstance(70, 70, Image.SCALE_SMOOTH));
-	Image imgEnt = new ImageIcon("src/general.icons/ENTRENADOR.png").getImage();
+	Image imgEnt = new ImageIcon(getClass().getResource("/general.icons/ENTRENADOR.png")).getImage();
 	ImageIcon ent = new ImageIcon(imgEnt.getScaledInstance(70, 70, Image.SCALE_SMOOTH));
-	Image imgTer = new ImageIcon("src/general.icons/TERAPEUTA.png").getImage();
+	Image imgTer = new ImageIcon(getClass().getResource("/general.icons/TERAPEUTA.png")).getImage();
 	ImageIcon ter= new ImageIcon(imgTer.getScaledInstance(70, 70, Image.SCALE_SMOOTH));
-	Image imgPai = new ImageIcon("src/general.icons/PAIS.png").getImage();
+	Image imgPai = new ImageIcon(getClass().getResource("/general.icons/PAIS.png")).getImage();
 	ImageIcon pai= new ImageIcon(imgPai.getScaledInstance(70, 70, Image.SCALE_SMOOTH));
 	
 	String datosCiclista = "Nombre\tApellido\tEdad\tEquipo\tNumero\tEmail\tPatrocinador\tSalario\n";

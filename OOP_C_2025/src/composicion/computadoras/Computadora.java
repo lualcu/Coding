@@ -1,6 +1,14 @@
 package composicion.computadoras;
 
+import java.awt.Image;
+
+import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
+
 public class Computadora {
+	
+	Image imgComp = new ImageIcon("src/general.icons/COMPUTADORA.png").getImage();
+	ImageIcon comp= new ImageIcon(imgComp.getScaledInstance(70, 70, Image.SCALE_SMOOTH));
 	
 	private String marca;
 	private String modelo;
@@ -92,5 +100,17 @@ public class Computadora {
 		this.serie = serie;
 	}
 	
+	public void encender() {
+		JOptionPane.showMessageDialog(null, "La Computadora Encendió", 
+				"Computadora", JOptionPane.INFORMATION_MESSAGE, comp);
+	}
+	public void apagar() {
+		JOptionPane.showMessageDialog(null, "La Computadora se Apagó", 
+				"Computadora", JOptionPane.INFORMATION_MESSAGE, comp);
+	}
+	public void procesar() {
+		JOptionPane.showMessageDialog(null, "La Computadora Procesa", 
+				"Computadora", JOptionPane.INFORMATION_MESSAGE, comp);
+	}
 
 }

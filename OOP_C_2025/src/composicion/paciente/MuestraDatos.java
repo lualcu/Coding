@@ -12,13 +12,13 @@ public class MuestraDatos {
 	String datosMedico = "Nombre\tApellido\tDireccion\tEdad\tCedula\tEspecialidad\tSalario\tEmail";
 	String datosHospital = "Nombre\tDireccion\tRFC\tWWW\tTelefono";
 	
-	Image imgMed = new ImageIcon("src/general.icons/MEDICO.png").getImage();
+	Image imgMed = new ImageIcon(getClass().getResource("/general.icons/MEDICO.png")).getImage();
 	ImageIcon med =  new ImageIcon(imgMed.getScaledInstance(70, 70, Image.SCALE_SMOOTH));
 	
-	Image imgHos = new ImageIcon("src/general.icons/HOSPITAL.png").getImage();
+	Image imgHos = new ImageIcon(getClass().getResource("/general.icons/HOSPITAL.png")).getImage();
 	ImageIcon hos= new ImageIcon(imgHos.getScaledInstance(70, 70, Image.SCALE_SMOOTH));
 	
-	Image imgPac = new ImageIcon("src/general.icons/PACIENTE.png").getImage();
+	Image imgPac = new ImageIcon(getClass().getResource("/general.icons/PACIENTE.png")).getImage();
 	ImageIcon pac= new ImageIcon(imgPac.getScaledInstance(70, 70, Image.SCALE_SMOOTH));
 	
 	

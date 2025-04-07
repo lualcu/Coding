@@ -49,6 +49,11 @@ public class PruebaVehiculo {
 		JOptionPane.showMessageDialog(null, salida, "Catalogo - Vehiculos",
 				JOptionPane.INFORMATION_MESSAGE,icon);
 		
+		a1.arrancar();
+		a1.detenerse();
+		a1.acelerar();
+		a1.frenar();
+		
 
 	}
 

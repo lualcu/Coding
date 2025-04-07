@@ -24,5 +24,9 @@ public class MuestraDatos {
 		salida.setText(datos);
 		JOptionPane.showMessageDialog(null, salida, "Catalogo - Computadora", 
 				JOptionPane.INFORMATION_MESSAGE, comp);
+		
+		c.encender();
+		c.apagar();
+		c.procesar();
 	}
 }

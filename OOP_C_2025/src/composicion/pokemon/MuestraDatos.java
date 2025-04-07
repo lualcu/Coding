@@ -20,6 +20,12 @@ public class MuestraDatos {
 		salida.setText(datos);
 		JOptionPane.showMessageDialog(null, salida, "Reporte de Pokemon´s", 
 				JOptionPane.INFORMATION_MESSAGE,aviso);
+		
+		p.comer();
+		p.dormir();
+		p.pelear();
+		p.saltar();
+		p.correr();
 	}
 
 }

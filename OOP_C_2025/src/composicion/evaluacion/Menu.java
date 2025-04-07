@@ -16,11 +16,11 @@ public class Menu {
 	Pais pais;
 	
 	// Crear Iconos
-	Image imgMenu = new ImageIcon("src/general.icons/MENU.png").getImage();
+	Image imgMenu = new ImageIcon(getClass().getResource("/general.icons/MENU.png")).getImage();
 	ImageIcon menu= new ImageIcon(imgMenu.getScaledInstance(70, 70, Image.SCALE_SMOOTH));
-	Image imgError = new ImageIcon("src/general.icons/ERROR.png").getImage();
+	Image imgError = new ImageIcon(getClass().getResource("/general.icons/ERROR.png")).getImage();
 	ImageIcon error= new ImageIcon(imgError.getScaledInstance(70, 70, Image.SCALE_SMOOTH));
-	Image imgSalir = new ImageIcon("src/general.icons/SALIR.png").getImage();
+	Image imgSalir = new ImageIcon(getClass().getResource("/general.icons/SALIR.png")).getImage();
 	ImageIcon salir= new ImageIcon(imgSalir.getScaledInstance(70, 70, Image.SCALE_SMOOTH));
 	
 	public void menu() {
